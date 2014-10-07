@@ -1,0 +1,10 @@
+#!/bin/bash
+function rails_search_spring_loaded_bin {
+  if [ -x $2 ]; then
+    echo $2
+  else
+    echo $1
+  fi
+}
+
+`rails_search_spring_loaded_bin 'rake' 'bin/rake'`
